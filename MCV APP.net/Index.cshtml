@@ -1,0 +1,19 @@
+@model CounterApp.CounterModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Counter Application</h1>
+        <h2 class="my-4">Current Count: @Model.Count</h2>
+        <div>
+            <a href="@Url.Action("Increment", "Counter")" class="btn btn-success">Increment</a>
+            <a href="@Url.Action("Reset", "Counter")" class="btn btn-danger">Reset</a>
+        </div>
+    </div>
+</body>
+</html>
